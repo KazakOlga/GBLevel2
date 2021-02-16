@@ -12,5 +12,5 @@ const server = http.createServer(function(req,res){
     }
 res.end(body);
 });
-server.listen(29506);
+server.listen(process.env.PORT || 29506);
 console.log ('Server started');
